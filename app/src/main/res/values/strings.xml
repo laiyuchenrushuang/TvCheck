@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TvCheck</string>
+    <string name="login_title">成都宇世通机动车检测站</string>
+    <string name="list_title">检验车辆</string>
+    <string name="list_col_hphm">号牌号码</string>
+    <string name="list_col_aj">安检</string>
+    <string name="list_col_hj">环检</string>
+    <string name="list_hg">合格</string>
+    <string name="list_bhg">不合格</string>
+    <string name="version">版权所有@成都海成科技有效公司</string>
+</resources>
