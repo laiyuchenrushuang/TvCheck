@@ -1,5 +1,7 @@
 package com.seatrend.vendor.tvcheck.entity;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Created by ly on 2020/3/27 11:16
  */
@@ -32,4 +34,10 @@ public class Data {
     private String hphm;
     private String aj;
     private String hj;
+
+    @NotNull
+    @Override
+    public String toString() {
+        return "hmhp = "+hphm +" ajjl = "+aj +" hjjl = "+hj;
+    }
 }

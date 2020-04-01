@@ -30,14 +30,14 @@ class RetrofitUtils private constructor() {
 
     companion object {
         const val BASE_HEAD = "http://"
-        const val BASE_IP = "220.171.43.76"
-        const val BASE_PORT = "82"
-        const val BASE_NEXT = "/ddc/"
+        const val BASE_IP = "11.1.1.73"
+        const val BASE_PORT = "8086"
 
         const val MY_TAG = "Http[lylog] "
 
 
-        const val BASE_URL = "$BASE_HEAD$BASE_IP:$BASE_PORT$BASE_NEXT"
+        ////http://11.1.1.73:8086/ProvinceService2/trffweb/services/TmriOutNewAccess?wsdl
+        const val BASE_URL = "$BASE_HEAD$BASE_IP:$BASE_PORT/"
 
 
         private const val CONNECT_TIME_OUT = 20L

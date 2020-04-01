@@ -21,6 +21,8 @@ abstract class BaseActivity :AppCompatActivity(){
         requestWindowFeature(Window.FEATURE_NO_TITLE)//取消title
         supportActionBar!!.hide() //取消bar
 
+//        window.setFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE, WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE)
+
         setContentView(getLayout())
         initView()
 

@@ -50,8 +50,8 @@ class HgAdapter(private var mContext: Context? = null, private var mData: ArrayL
 
         fun setItemView(position: Int) {
             tv_hphm!!.text =  StringUtils.isNull(mData!![position].hphm)
-            tv_aj!!.text =  StringUtils.isNull(mData!![position].aj)
-            tv_hj!!.text =  StringUtils.isNull(mData!![position].hj)
+            tv_aj!!.text = if("1" == StringUtils.isNull(mData!![position].aj)) "合格" else "不合格"
+            tv_hj!!.text = if("1" == StringUtils.isNull(mData!![position].hj)) "合格" else "不合格"
         }
     }
 }

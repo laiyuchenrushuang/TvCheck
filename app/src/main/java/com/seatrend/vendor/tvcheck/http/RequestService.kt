@@ -2,6 +2,7 @@ package com.example.vendor.nextapp.http
 
 import retrofit2.Call
 import okhttp3.ResponseBody
+import org.ksoap2.serialization.SoapObject
 import retrofit2.http.*
 import retrofit2.http.POST
 
@@ -35,6 +36,8 @@ interface RequestService {
      *
      * ---------------------->>>>>>>>>>>>>>>> GET 篇 end<<<<<<<<<<<<<<<<<<<<<<-------------------------
      */
+
+
 
     /**
      * <REQUEST 1>
@@ -135,6 +138,11 @@ interface RequestService {
     @GET("jyptdbctl/{video}/getVideoPage")
     fun <T> getCall(@Path("video") path:String,@Body  type :T):Call<ResponseBody>
 
+
+
+    @Headers("Content-Type: text/xml; charset=utf-8","SOAPAction:http://endpoint.webservice.pda.seatrend.com")
+    @POST("ProvinceService2/trffweb/services/TmriOutNewAccess?wsdl")
+    fun getCall (@Body str: String):Call<ResponseBody>
 
 
 

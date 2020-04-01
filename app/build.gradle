@@ -49,4 +49,13 @@ dependencies {
 
     //recycleview
     implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+    //retrofit - webservice
+    implementation('com.squareup.retrofit2:converter-simplexml:2.2.0') {
+        exclude group:'xpp3',module:'xpp3'
+        exclude group:'stax',module:'stax-api'
+        exclude group:'stax',module:'stax'
+    }
+
+    compile files('libs/ksoap2-android-assembly-3.5.0-jar-with-dependencies.jar')
 }

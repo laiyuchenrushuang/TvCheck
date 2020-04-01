@@ -15,6 +15,7 @@ internal class RequestHeaderInterceptor : Interceptor {
         val original = chain.request()
         val request = original.newBuilder()
             .addHeader("Content-Type", "application/json; charset=UTF-8")
+            .addHeader("Content-Type", "text/xml;charset=UTF-8")
             .method(original.method(), original.body())
             .build()
 

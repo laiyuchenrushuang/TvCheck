@@ -44,21 +44,6 @@ abstract class BaseFragment : Fragment() {
 
     }
 
-    protected fun showToast(msgId: Int) {
-        Toast.makeText(context, getString(msgId), Toast.LENGTH_SHORT).show()
-    }
-
-
-    fun showNoDataView(msg: String) {
-        llNoData!!.visibility = View.VISIBLE
-        tvNoDataMsg!!.text = msg
-    }
-
-    fun hideNoDataView() {
-        llNoData!!.visibility = View.GONE
-
-    }
-
     protected fun showLog(s: String) {
         Log.d("lylog", s)
     }
